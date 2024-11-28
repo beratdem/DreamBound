@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &3279643683886028533
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 812443397022550546}
+  - component: {fileID: 4576596897606723930}
+  m_Layer: 0
+  m_Name: Wave Spawn Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &812443397022550546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279643683886028533}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 11, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4576596897606723930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3279643683886028533}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cdbb98f9aeb739b439e738eea2d88a2e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waves:
+  - timeToSpawn: 2
+    theWave: {fileID: 4792740898280681573, guid: 8c39ec1e3e721224c9289427d4c622e6, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 6082079393135593691, guid: cb1336f1a993f4247b4b3f95d974b151, type: 3}
+  - timeToSpawn: 1
+    theWave: {fileID: 1960722464519958743, guid: 782ffd8e3ad76274ca06de4533081514, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 5862040183568187623, guid: a4f98b1e06650f846996395f3655ebe3, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 5655978994098748507, guid: c915e16525dd42d4485402844cef0b2e, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 6082079393135593691, guid: cb1336f1a993f4247b4b3f95d974b151, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 5862040183568187623, guid: a4f98b1e06650f846996395f3655ebe3, type: 3}
+  - timeToSpawn: 3
+    theWave: {fileID: 6944744910742229892, guid: 538f0146ab7d8bd42b8b2dcaf850d157, type: 3}
+  currentWave: 0
+  timeToNextWave: 0
+  canSpawnWaves: 1
